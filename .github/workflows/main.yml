@@ -171,7 +171,7 @@ jobs:
           python ../scripts/clear_cloudflare_cache.py stable
 
       - name: Publish cleaned branch tentacles
-        if: startsWith(github.ref, 'refs/tags') != true && github.ref != 'refs/heads/master'
+        if: startsWith(github.ref, 'refs/tags') != true && github.ref != 'refs/heads/master' && false
         env:
           S3_BUCKET_NAME: ${{ secrets.S3_DEV_BUCKET_NAME }}
         run: |
