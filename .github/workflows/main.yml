@@ -5,6 +5,7 @@ on:
       - 'master'
       - 'dev'
       - 'beta'
+      - 'risk'
     tags:
       - '*'
   pull_request:
